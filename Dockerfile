@@ -1,10 +1,8 @@
 FROM node:4.6
 
-mkdir /sampledockerapp
+WORKDIR /app
 
-WORKDIR /sampledockerapp
-
-ADD ./sampledockerapp
+ADD . /app
 
 RUN npm install
 
